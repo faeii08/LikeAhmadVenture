@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #2C3E50; /* Dark steel blue for a formal and modern look */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Centers logo and text vertically */
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px; /* Adds space between logo and text */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Adds space between menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFC107; /* Changes color on hover */
+    text-decoration: underline;
+}
+
+.account-button {
+    background-color: #FFC107; /* Gold to match hover effect */
+    color: #2C3E50; /* Dark text for better contrast */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.account-button:hover {
+    background-color: #E0A800; /* Darker gold for hover */
+}

@@ -1,0 +1,87 @@
+/* Sidebar Styling */
+body {
+    background-color: #f4f7fc; /* Light gray background for a soft, clean look */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and clean font */
+}
+.sidebar {
+    height: 100vh;
+    width: 270px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #373A40; /* Elegant gradient from blue to light blue */
+    color: white;
+    padding-top: 40px;
+    transition: all 0.3s ease-in-out; /* Smooth transition for sidebar animations */
+}
+.sidebar h1 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.sidebar a {
+    padding: 15px 30px;
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 1.15rem;
+    text-decoration: none;
+    margin: 8px 0;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease, transform 0.2s ease;
+}
+.sidebar a:hover {
+    background-color: #686D76;
+    color: #fff;
+    padding-left: 40px;
+    transform: translateX(5px); /* Subtle sliding effect */
+}
+.sidebar a.active {
+    background-color: #1abc9c;
+    color: #fff;
+    transform: translateX(5px);
+}
+.sidebar a i {
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+.main-content {
+    margin-left: 290px; /* Adjusted for sidebar width */
+    padding: 20px;
+    min-height: 100vh;
+    background: #F2F1F0; /* Clean white background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: margin-left 0.3s ease;
+}
+
+.logout-link {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.logout-link i {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+}
+
+.logout-link:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    transform: translateX(5px); /* Add hover effect */
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 230px;
+    }
+    .main-content {
+        margin-left: 240px; /* Adjusted for smaller sidebar */
+    }
+}
